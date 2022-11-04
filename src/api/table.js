@@ -8,9 +8,17 @@ import request from '@/utils/request'
 //   })
 // }
 
-export function getList(params) {
+export function getListOrderInfo(params) {
   return request({
-    url: '/orderinfo/all',
+    url: '/order/orderinfo/all',
+    method: 'get',
+    params
+  })
+}
+
+export function getListBuisInfo(params) {
+  return request({
+    url: '/order/buisinfo/all',
     method: 'get',
     params
   })
